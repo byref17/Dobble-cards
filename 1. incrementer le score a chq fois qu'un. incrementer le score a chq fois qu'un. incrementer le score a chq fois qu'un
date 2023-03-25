@@ -1,0 +1,7 @@
+1. incrementer le score a chq fois qu'une paire est trouvee
+2. si le score >=12 : c gagne => confettis
+3. reset : enlever la classe "turned" de toutes les cartes + reset le score
+
+
+
+

@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/image de fond/frame-fresh-vegetables.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Comfortaa, cursive;
+    max-height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ */
+}
+
+/* __  .__  __                  
+_/  |_|__|/  |________   ____  
+\   __\  \   __\_  __ \_/ __ \ 
+ |  | |  ||  |  |  | \/\  ___/ 
+ |__| |__||__|  |__|    \___  >
+                            \/  
+*/
+
+h1 {
+
+    font-family: Comfortaa, cursive;
+    letter-spacing: 3.5px;
+    font-size: 4.03rem;
+    color: white;
+    text-shadow: 5px 5px 2px red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 65px;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*    
+     __                   .___                             __                 
+    |__| ____  __ __    __| _/____     ____ _____ ________/  |_  ____   ______
+    |  |/ __ \|  |  \  / __ |/ __ \  _/ ___\\__  \\_  __ \   __\/ __ \ /  ___/
+    |  \  ___/|  |  / / /_/ \  ___/  \  \___ / __ \|  | \/|  | \  ___/ \___ \ 
+/\__|  |\___  >____/  \____ |\___  >  \___  >____  /__|   |__|  \___  >____  >
+\______|    \/             \/    \/       \/     \/                 \/     \/
+
+*/
+
+#jeu img {
+    width: 100%;
+}
+
+#jeu {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 150px;
+}
+
+.carte {
+
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin: 5px;
+    position: relative;
+    transform: rotateY(0deg);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.55s;
+    align-items: center;
+    /* background: ; */
+}
+
+/* .carte:active {
+    transition: transform 3s;
+} */
+
+.carte.turned {
+    transform: rotateY(180deg);
+    /* background-color: ; */
+
+}
+
+#face,
+#dos {
+    backface-visibility: hidden;
+    width: 75px;
+    height: 113px;
+}
+
+#dos {
+    transform: rotateY(180deg);
+    background: white;
+
+}
+
+#face {
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+}
+
+
+/* ************************************************************ */
+
+#ecrangagne {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(23, 244, 3, 0.564);
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 200px;
+    letter-spacing: 2.5px;
+    color: white;
+    text-shadow: 5px 5px 2px red
+}
+
+/* 
+.__                     .__   
+|  |   _______  __ ____ |  |  
+|  | _/ __ \  \/ // __ \|  |  
+|  |_\  ___/\   /\  ___/|  |__
+|____/\___  >\_/  \___  >____/
+          \/          \/      
+ */
+.levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.levels img {
+    position: absolute;
+    width: 220px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.levels .level {
+    position: relative;
+    font-size: 2rem;
+    text-align: -webkit-match-parent;
+    margin-left: 50px;
+    margin-top: 4px;
+    padding-right: 80px;
+    cursor: pointer;
+}
+
+
+/* ************************************ */
+
+#compteurclicks {
+    text-align: center;
+    color: greenyellow;
+}
+
+#score {
+
+    text-align: center;
+    color: greenyellow;
+}
+
+a {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* ************************************ */
+
+.parametre img {
+    width: 70px;
+    object-fit: contain;
+    /* margin-left: 105px;
+    margin-right: 35px;
+    margin-top: 65px; */
+    cursor: pointer;
+}
